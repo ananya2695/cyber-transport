@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import { HomePage } from "../home/home";
+import { SenderActionPage } from "../sender-action/sender-action";
+import { BookingPage } from "../booking/booking";
+import { SendTrackingNumberPage } from "../send-tracking-number/send-tracking-number";
+import { MorePage } from "../more/more";
 
 /**
  * Generated class for the TabtransPage tabs.
@@ -14,11 +19,11 @@ import { IonicPage, NavController } from 'ionic-angular';
 @IonicPage()
 export class TabtransPage {
 
-  homeRoot = 'HomePage'
-  senderActionRoot = 'SenderActionPage'
-  bookingRoot = 'BookingPage'
-  sendTrackingNumberRoot = 'SendTrackingNumberPage'
-  moreRoot = 'MorePage'
+  homeRoot = HomePage
+  senderActionRoot = SenderActionPage
+  bookingRoot = BookingPage
+  sendTrackingNumberRoot = SendTrackingNumberPage
+  moreRoot = MorePage
 
 
   constructor(public navCtrl: NavController) {}

@@ -56,10 +56,16 @@ import { ValidatorsModule } from '../components/validators/validators.module';
 import { LanguageService } from '../providers/language/language.service';
 
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
+import { HomePage } from "../pages/home/home";
+import { SenderActionPage } from "../pages/sender-action/sender-action";
+import { BookingPage } from "../pages/booking/booking";
+import { SendTrackingNumberPage } from "../pages/send-tracking-number/send-tracking-number";
+import { MorePage } from "../pages/more/more";
 import { ConfirmPage } from "../pages/confirm/confirm";
 import { HomeListComponent } from '../components/home-list/home-list';
 import { HomeServiceProvider } from '../pages/home/home.service';
 import { ConfirmServiceProvider } from '../providers/confirm-service/confirm-service';
+import { AddressCardComponent } from '../components/address-card/address-card';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -82,7 +88,13 @@ export function createTranslateLoader(http: Http) {
     TabtransPage,
     ConfirmPage,
     TabtransPage,
-    HomeListComponent
+    HomeListComponent,
+    HomePage,
+    SenderActionPage,
+    BookingPage,
+    SendTrackingNumberPage,
+    MorePage,
+    AddressCardComponent
   ],
   imports: [
     BrowserModule,
@@ -103,6 +115,11 @@ export function createTranslateLoader(http: Http) {
     MyApp,
     WalkthroughPage,
     TabtransPage,
+    HomePage,
+    SenderActionPage,
+    BookingPage,
+    SendTrackingNumberPage,
+    MorePage,
     ConfirmPage
   ],
   providers: [
