@@ -56,6 +56,8 @@ import { ValidatorsModule } from '../components/validators/validators.module';
 import { LanguageService } from '../providers/language/language.service';
 
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
+import { HomeListComponent } from '../components/home-list/home-list';
+import { HomeServiceProvider } from '../pages/home/home.service';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -75,7 +77,8 @@ export function createTranslateLoader(http: Http) {
     CounterInput,
     Rating,
     GoogleMap,
-    TabtransPage
+    TabtransPage,
+    HomeListComponent
   ],
   imports: [
     BrowserModule,
@@ -115,7 +118,8 @@ export function createTranslateLoader(http: Http) {
 		AppRate,
 		ImagePicker,
 		Crop,
-		EmailComposer
+		EmailComposer,
+    HomeServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
