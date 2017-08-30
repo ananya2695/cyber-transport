@@ -3,6 +3,7 @@ nameplace:string;
 address:Address = new Address();
 telplace:string;
 timeplace:string;
+dateplace:string,
 pieceplace:number;
 }
 export class Address{

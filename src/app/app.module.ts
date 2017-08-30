@@ -59,6 +59,7 @@ import { TabtransPage } from "../pages/tabtrans/tabtrans";
 import { ConfirmPage } from "../pages/confirm/confirm";
 import { HomeListComponent } from '../components/home-list/home-list';
 import { HomeServiceProvider } from '../pages/home/home.service';
+import { ConfirmServiceProvider } from '../providers/confirm-service/confirm-service';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -123,7 +124,8 @@ export function createTranslateLoader(http: Http) {
     ImagePicker,
     Crop,
     EmailComposer,
-    HomeServiceProvider
+    HomeServiceProvider,
+    ConfirmServiceProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
