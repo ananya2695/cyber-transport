@@ -14,11 +14,10 @@ export class HomeListComponent {
   @Input() items:any;
   @Output() itemClicked:EventEmitter<any> = new EventEmitter<any>();
 
-  text: string;
-
   constructor() {
-    console.log('Hello HomeListComponent Component');
-    this.text = 'Hello World';
+  }
+  onClick(item){
+    this.itemClicked.emit(item);
   }
 
 }
