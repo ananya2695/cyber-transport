@@ -15,7 +15,7 @@ import { ShowHideInput } from '../components/show-hide-password/show-hide-input'
 import { ColorRadio } from '../components/color-radio/color-radio';
 import { CounterInput } from '../components/counter-input/counter-input';
 import { Rating } from '../components/rating/rating';
-import { GoogleMap } from '../components/google-map/google-map';
+// import { GoogleMap } from '../components/google-map/google-map';
 
 // import { FacebookLoginService } from '../pages/facebook-login/facebook-login.service';
 // import { GoogleLoginService } from '../pages/google-login/google-login.service';
@@ -56,6 +56,7 @@ import { ValidatorsModule } from '../components/validators/validators.module';
 import { LanguageService } from '../providers/language/language.service';
 
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
+import { ConfirmPage } from "../pages/confirm/confirm";
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -74,8 +75,9 @@ export function createTranslateLoader(http: Http) {
     ColorRadio,
     CounterInput,
     Rating,
-    GoogleMap,
-    TabtransPage
+    // GoogleMap,
+    TabtransPage,
+    ConfirmPage
   ],
   imports: [
     BrowserModule,
@@ -95,7 +97,8 @@ export function createTranslateLoader(http: Http) {
   entryComponents: [
     MyApp,
     WalkthroughPage,
-    TabtransPage
+    TabtransPage,
+    ConfirmPage
   ],
   providers: [
     // GoogleMapsService,
