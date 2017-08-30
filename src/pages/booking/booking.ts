@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BookingModel } from "./booking.model";
+import { BookingServiceProvider } from "./booking.service";
+
 
 /**
  * Generated class for the BookingPage page.
@@ -13,12 +16,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'booking.html',
 })
 export class BookingPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  booking:BookingModel = new BookingModel
+  constructor(public navCtrl: NavController, public navParams: NavParams, public bookingServiceProvider:BookingServiceProvider ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BookingPage');
+    this.getBookingData();
   }
+  getBookingData() {
+    this.bookingServiceProvider.getBooking().then((data) => {
+      this.booking = data;
+      console.log(data);
+    }, (err) => {
+      console.error(err);
+    });
+
+  }
+  
 
 }

@@ -67,6 +67,7 @@ import { HomeServiceProvider } from '../pages/home/home.service';
 import { ConfirmServiceProvider } from '../pages/confirm/confirm.service';
 import { AddressCardComponent } from '../components/address-card/address-card';
 import { ComfirmCardComponent } from '../components/comfirm-card/comfirm-card';
+import { BookingServiceProvider } from '../providers/booking-service/booking-service';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -145,7 +146,8 @@ export function createTranslateLoader(http: Http) {
     Crop,
     EmailComposer,
     HomeServiceProvider,
-    ConfirmServiceProvider
+    ConfirmServiceProvider,
+    BookingServiceProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
