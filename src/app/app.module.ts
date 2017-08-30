@@ -64,6 +64,7 @@ import { MorePage } from "../pages/more/more";
 import { ConfirmPage } from "../pages/confirm/confirm";
 import { HomeListComponent } from '../components/home-list/home-list';
 import { HomeServiceProvider } from '../pages/home/home.service';
+import { ConfirmServiceProvider } from '../providers/confirm-service/confirm-service';
 import { AddressCardComponent } from '../components/address-card/address-card';
 
 export function createTranslateLoader(http: Http) {
@@ -141,7 +142,8 @@ export function createTranslateLoader(http: Http) {
     ImagePicker,
     Crop,
     EmailComposer,
-    HomeServiceProvider
+    HomeServiceProvider,
+    ConfirmServiceProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
