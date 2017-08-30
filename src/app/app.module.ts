@@ -15,7 +15,7 @@ import { ShowHideInput } from '../components/show-hide-password/show-hide-input'
 import { ColorRadio } from '../components/color-radio/color-radio';
 import { CounterInput } from '../components/counter-input/counter-input';
 import { Rating } from '../components/rating/rating';
-import { GoogleMap } from '../components/google-map/google-map';
+// import { GoogleMap } from '../components/google-map/google-map';
 
 // import { FacebookLoginService } from '../pages/facebook-login/facebook-login.service';
 // import { GoogleLoginService } from '../pages/google-login/google-login.service';
@@ -61,12 +61,13 @@ import { SenderActionPage } from "../pages/sender-action/sender-action";
 import { BookingPage } from "../pages/booking/booking";
 import { SendTrackingNumberPage } from "../pages/send-tracking-number/send-tracking-number";
 import { MorePage } from "../pages/more/more";
+import { ConfirmPage } from "../pages/confirm/confirm";
 import { HomeListComponent } from '../components/home-list/home-list';
 import { HomeServiceProvider } from '../pages/home/home.service';
 import { AddressCardComponent } from '../components/address-card/address-card';
 
 export function createTranslateLoader(http: Http) {
-	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 
@@ -82,7 +83,9 @@ export function createTranslateLoader(http: Http) {
     ColorRadio,
     CounterInput,
     Rating,
-    GoogleMap,
+    // GoogleMap,
+    TabtransPage,
+    ConfirmPage,
     TabtransPage,
     HomeListComponent,
     HomePage,
@@ -96,15 +99,15 @@ export function createTranslateLoader(http: Http) {
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-		TranslateModule.forRoot({
-    loader: {
+    TranslateModule.forRoot({
+      loader: {
         provide: TranslateLoader,
-      	useFactory: (createTranslateLoader),
+        useFactory: (createTranslateLoader),
         deps: [Http]
-		    }
-		}),
-		VideoPlayerModule,
-		ValidatorsModule
+      }
+    }),
+    VideoPlayerModule,
+    ValidatorsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -115,14 +118,15 @@ export function createTranslateLoader(http: Http) {
     SenderActionPage,
     BookingPage,
     SendTrackingNumberPage,
-    MorePage
+    MorePage,
+    ConfirmPage
   ],
   providers: [
     // GoogleMapsService,
-		LanguageService,
+    LanguageService,
 
-	  SplashScreen,
-	  StatusBar,
+    SplashScreen,
+    StatusBar,
     SocialSharing,
     NativeStorage,
     InAppBrowser,
@@ -131,13 +135,13 @@ export function createTranslateLoader(http: Http) {
     Keyboard,
     Geolocation,
     TwitterConnect,
-		AdMobFree,
-		AppRate,
-		ImagePicker,
-		Crop,
-		EmailComposer,
+    AdMobFree,
+    AppRate,
+    ImagePicker,
+    Crop,
+    EmailComposer,
     HomeServiceProvider
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }
