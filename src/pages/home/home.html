@@ -14,5 +14,6 @@
 
 
 <ion-content padding>
-    <home-list [items]="home.items" (click)="gotoConfirm()"></home-list>
+    <home-list [items]="home.items"></home-list>
+    <button ion-button block color="secondary" (click)="gotoBooking()">Book Now</button>
 </ion-content>

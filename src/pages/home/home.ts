@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HomeServiceProvider } from "./home.service";
 import { HomeModel } from "./home.model";
-import { ConfirmPage } from "../confirm/confirm";
+import { BookingPage } from "../booking/booking";
 /**
  * Generated class for the HomePage page.
  *
@@ -32,7 +32,8 @@ home: HomeModel = new HomeModel();
       console.error(error);
     });
   }
-  gotoConfirm(){
-    this.navCtrl.push(ConfirmPage);
+ 
+  gotoBooking(){
+    this.navCtrl.push(BookingPage);
   }
 }

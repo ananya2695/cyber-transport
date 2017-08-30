@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BookingModel } from "./booking.model";
 import { BookingServiceProvider } from "./booking.service";
+import { ConfirmPage } from "../confirm/confirm";
 
 
 /**
@@ -33,6 +34,8 @@ export class BookingPage {
     });
 
   }
-  
+  gotoConfirm(){
+    this.navCtrl.push(ConfirmPage);
+  }
 
 }

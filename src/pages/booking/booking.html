@@ -6,13 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>booking</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>booking</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <address-card [items]="booking" (click)="gotoConfirm()"></address-card>
 </ion-content>
