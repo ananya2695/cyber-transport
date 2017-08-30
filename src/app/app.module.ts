@@ -95,6 +95,7 @@ export function createTranslateLoader(http: Http) {
     BookingPage,
     SendTrackingNumberPage,
     MorePage,
+    AddressCardComponent,
     AddressCardComponent
   ],
   imports: [
