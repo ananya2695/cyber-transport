@@ -16,3 +16,12 @@
 <ion-content padding>
     <address-card [items]="booking" (click)="gotoConfirm()"></address-card>
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <ion-fab right top style="margin-top:-10px;">
+            <button ion-fab color="secondary">
+              <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-fab>
+    </ion-toolbar>
+</ion-footer>

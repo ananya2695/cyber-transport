@@ -1,9 +1,41 @@
-<ion-card>
+<!-- <ion-card>
     <ion-card-header>
-        {{items.nameplace}}
+        <ion-row>
+            <ion-col>PickUp Place</ion-col>
+            <ion-col>{{items.dateplace}}</ion-col>
+        </ion-row>
+        <ion-row>
+            {{items.nameplace}}
+        </ion-row>
     </ion-card-header>
     <ion-card-content>
         <p>{{items.addressplace.address}} {{items.addressplace.subdistrict}} {{items.addressplace.district}} {{items.addressplace.province}} {{items.addressplace.postcode}}</p>
         <p>Tel : {{items.telplace}}</p>
+        <ion-row>
+            <ion-col>{{items.timeplace}}</ion-col>
+            <ion-col text-right>Piece : {{items.pieceplace}}</ion-col>
+        </ion-row>
+    </ion-card-content>
+</ion-card> -->
+
+<ion-card>
+    <ion-card-content>
+        <!-- <ion-card-header> -->
+        <ion-row class="font-bold">
+            <ion-col>
+                {{items.nameplace}}
+            </ion-col>
+        </ion-row>
+        <!-- </ion-card-header> -->
+        <ion-row class="marginT">
+            <ion-col>
+                {{items.addressplace.address}} {{items.addressplace.subdistrict}} {{items.addressplace.district}} {{items.addressplace.province}} {{items.addressplace.postcode}}
+            </ion-col>
+        </ion-row>
+        <ion-row class="marginT">
+            <ion-col>
+                Tel : {{items.telplace}}
+            </ion-col>
+        </ion-row>
     </ion-card-content>
 </ion-card>
