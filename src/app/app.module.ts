@@ -64,8 +64,9 @@ import { MorePage } from "../pages/more/more";
 import { ConfirmPage } from "../pages/confirm/confirm";
 import { HomeListComponent } from '../components/home-list/home-list';
 import { HomeServiceProvider } from '../pages/home/home.service';
-import { ConfirmServiceProvider } from '../providers/confirm-service/confirm-service';
+import { ConfirmServiceProvider } from '../pages/confirm/confirm.service';
 import { AddressCardComponent } from '../components/address-card/address-card';
+import { ComfirmCardComponent } from '../components/comfirm-card/comfirm-card';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -95,7 +96,8 @@ export function createTranslateLoader(http: Http) {
     SendTrackingNumberPage,
     MorePage,
     AddressCardComponent,
-    AddressCardComponent
+    AddressCardComponent,
+    ComfirmCardComponent
   ],
   imports: [
     BrowserModule,

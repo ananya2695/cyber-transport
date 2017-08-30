@@ -1,9 +1,9 @@
 export class ConfirmModel{
 nameplace:string;
-address:Address = new Address();
+addressplace:Address = new Address();
 telplace:string;
 timeplace:string;
-dateplace:string,
+dateplace:string;
 pieceplace:number;
 }
 export class Address{

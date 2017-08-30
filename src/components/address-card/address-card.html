@@ -1,8 +1,9 @@
 <ion-card>
     <ion-card-header>
-        Header
+        {{items.nameplace}}
     </ion-card-header>
     <ion-card-content>
-        The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+        <p>{{items.addressplace.address}} {{items.addressplace.subdistrict}} {{items.addressplace.district}} {{items.addressplace.province}} {{items.addressplace.postcode}}</p>
+        <p>Tel : {{items.telplace}}</p>
     </ion-card-content>
 </ion-card>

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HomeServiceProvider } from "./home.service";
 import { HomeModel } from "./home.model";
+import { ConfirmPage } from "../confirm/confirm";
 /**
  * Generated class for the HomePage page.
  *
@@ -30,5 +31,8 @@ home: HomeModel = new HomeModel();
     },(error) => {
       console.error(error);
     });
+  }
+  gotoConfirm(){
+    this.navCtrl.push(ConfirmPage);
   }
 }
