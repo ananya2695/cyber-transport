@@ -2,10 +2,10 @@
     <ion-list>
         <button ion-item *ngFor="let item of items" (click)="onClick(item)">
         <ion-row>
-          <ion-col no-padding width-20 class="magin-right-10-custom">
+          <ion-col no-padding width-10 class="magin-right-10-custom">
             <preload-image [ratio]="{w:0.5, h:0.5}" [src]="item.img"></preload-image>
           </ion-col>
-           <ion-col>
+           <ion-col class="margin-left-custom">
             <h3 class="h3-name">{{item.name}}</h3>
             <!-- <p class="color-gold-custom"><ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> <ion-icon name="star"></ion-icon> (19)</p> -->
           </ion-col> 
