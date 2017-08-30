@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 /**
  * Generated class for the AddressCardComponent component.
@@ -11,12 +11,13 @@ import { Component } from '@angular/core';
   templateUrl: 'address-card.html'
 })
 export class AddressCardComponent {
+  @Input() items:any;
+  @Output() itemClicked:EventEmitter<any> = new EventEmitter<any>();
 
   text: string;
 
   constructor() {
     console.log('Hello AddressCardComponent Component');
-    this.text = 'Hello World';
   }
 
 }
