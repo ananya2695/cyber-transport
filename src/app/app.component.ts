@@ -9,6 +9,7 @@ import { Observable } from 'rxjs/Observable';
 // import { LayoutsPage } from '../pages/layouts/layouts';
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
+import { HomeListComponent } from "../components/home-list/home-list";
 // import { SettingsPage } from '../pages/settings/settings';
 // import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 

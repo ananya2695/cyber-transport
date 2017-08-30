@@ -57,9 +57,11 @@ import { LanguageService } from '../providers/language/language.service';
 
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
 import { ConfirmPage } from "../pages/confirm/confirm";
+import { HomeListComponent } from '../components/home-list/home-list';
+import { HomeServiceProvider } from '../pages/home/home.service';
 
 export function createTranslateLoader(http: Http) {
-	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 
@@ -77,21 +79,23 @@ export function createTranslateLoader(http: Http) {
     Rating,
     // GoogleMap,
     TabtransPage,
-    ConfirmPage
+    ConfirmPage,
+    TabtransPage,
+    HomeListComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-		TranslateModule.forRoot({
-    loader: {
+    TranslateModule.forRoot({
+      loader: {
         provide: TranslateLoader,
-      	useFactory: (createTranslateLoader),
+        useFactory: (createTranslateLoader),
         deps: [Http]
-		    }
-		}),
-		VideoPlayerModule,
-		ValidatorsModule
+      }
+    }),
+    VideoPlayerModule,
+    ValidatorsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -102,10 +106,10 @@ export function createTranslateLoader(http: Http) {
   ],
   providers: [
     // GoogleMapsService,
-		LanguageService,
+    LanguageService,
 
-	  SplashScreen,
-	  StatusBar,
+    SplashScreen,
+    StatusBar,
     SocialSharing,
     NativeStorage,
     InAppBrowser,
@@ -114,12 +118,13 @@ export function createTranslateLoader(http: Http) {
     Keyboard,
     Geolocation,
     TwitterConnect,
-		AdMobFree,
-		AppRate,
-		ImagePicker,
-		Crop,
-		EmailComposer
+    AdMobFree,
+    AppRate,
+    ImagePicker,
+    Crop,
+    EmailComposer,
+    HomeServiceProvider
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }
