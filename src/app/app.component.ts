@@ -27,7 +27,7 @@ export class MyApp {
 
   // make WalkthroughPage the root (or first) page
 
-  rootPage: any = AddPickupAddressPage;
+  rootPage: any = RegisterPage;
 
 
 

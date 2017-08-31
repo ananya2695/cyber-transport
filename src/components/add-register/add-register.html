@@ -1,7 +1,15 @@
 <ion-content class="signup-content auth-content">
     <ion-slides #slides>
         <ion-slide class="slide-1">
-            <ion-list>
+            <ion-row>
+                <ion-col>
+                    <button ion-button block color="danger"><ion-icon name="logo-googleplus"></ion-icon></button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button block color="primary"><ion-icon name="logo-facebook"></ion-icon></button>
+                </ion-col>
+            </ion-row>
+            <ion-row class="marginT">
 
                 <ion-item>
                     <ion-label stacked>Email</ion-label>
@@ -29,38 +37,55 @@
                     <ion-input type="mobile"></ion-input>
                 </ion-item>
 
-            </ion-list>
-            <button ion-button block color="secondary" (click)="goto2()">Create Account</button>
-
+            </ion-row>
+            <ion-row class="marginT">
+                <button ion-button block color="secondary" (click)="goto2()">Create Account</button>
+            </ion-row>
         </ion-slide>
 
         <ion-slide class="slide-2">
+
             <ion-list>
                 <ion-item>
                     <ion-label stacked>Shop Name</ion-label>
                     <ion-input type="shopname"></ion-input>
                 </ion-item>
             </ion-list>
-            <button ion-button block color="secondary" (click)="goto2()">NEXT</button>
+            <button ion-button block color="secondary" (click)="goto3()">NEXT</button>
+            <button ion-button block color="light" (click)="BacksignupProfile()">BACK</button>
         </ion-slide>
 
         <ion-slide class="slide-3">
-            <ion-list>
-                <ion-item>
-                    <ion-label stacked>Account name</ion-label>
-                    <ion-input type="accountname"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-label stacked>Account number</ion-label>
-                    <ion-input type="accountnumber"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-label stacked>Confirm account number</ion-label>
-                    <ion-input type="confirmaccountnumber"></ion-input>
-                </ion-item>
-            </ion-list>
+            <ion-row>
+                <ion-col>
+                    <img src="http://file.lb.gg.in.th/Files/Upload/LB20170308145014728.png " alt="">
+                </ion-col>
+                <ion-col>
+                    <img src="http://www.srongpol.com/wp-content/uploads/2015/04/k-bank.png " alt="">
+                </ion-col>
+                <ion-col>
+                    <img src="https://www.job4thai.com/wp-content/uploads/job-bank-of-ayudhya.jpg" alt="">
+                </ion-col>
+                <ion-col>
+                    <img src="http://www.srongpol.com/wp-content/uploads/2015/04/scb-bank.png" alt="">
+                </ion-col>
+            </ion-row>
+            <!-- <ion-list padding> -->
+            <ion-item>
+                <ion-label stacked>Account name</ion-label>
+                <ion-input type="accountname"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>Account number</ion-label>
+                <ion-input type="accountnumber"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label stacked>Confirm account number</ion-label>
+                <ion-input type="confirmaccountnumber"></ion-input>
+            </ion-item>
+            <!-- </ion-list> -->
             <button ion-button block color="light">SUBMIT</button>
-            <button ion-button block color="light">LATER</button>
+            <button ion-button block color="light" (click)="BacksignupShop()">LATER</button>
         </ion-slide>
     </ion-slides>
 </ion-content>
