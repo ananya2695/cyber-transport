@@ -68,6 +68,8 @@ import { ConfirmServiceProvider } from '../pages/confirm/confirm.service';
 import { AddressCardComponent } from '../components/address-card/address-card';
 import { ComfirmCardComponent } from '../components/comfirm-card/comfirm-card';
 import { BookingServiceProvider } from '../pages/booking/booking.service';
+import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
+import { RegisterPage } from "../pages/register/register";
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -96,6 +98,8 @@ export function createTranslateLoader(http: Http) {
     BookingPage,
     SendTrackingNumberPage,
     MorePage,
+    AddPickupAddressPage,
+    RegisterPage,
     AddressCardComponent,
     AddressCardComponent,
     ComfirmCardComponent
@@ -124,6 +128,8 @@ export function createTranslateLoader(http: Http) {
     BookingPage,
     SendTrackingNumberPage,
     MorePage,
+    AddPickupAddressPage,
+    RegisterPage,
     ConfirmPage
   ],
   providers: [
