@@ -14,6 +14,7 @@ import { HomeListComponent } from "../components/home-list/home-list";
 // import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make WalkthroughPage the root (or first) page
-  rootPage: any = TabtransPage;
+  rootPage: any = AddPickupAddressPage;
   // rootPage: any = FunctionalitiesPage;
   // rootPage: any = TabsNavigationPage;
   textDir: string = "ltr";

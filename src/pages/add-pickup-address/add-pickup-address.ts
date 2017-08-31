@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AddpickupaddressModel } from "./add-pickup-address.model";
+import { AddpickupaddressServiceProvider } from "./add-pickup-address.service";
 
 /**
  * Generated class for the AddPickupAddressPage page.
@@ -13,12 +15,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'add-pickup-address.html',
 })
 export class AddPickupAddressPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  addpickupaddress: AddpickupaddressModel = new AddpickupaddressModel
+  constructor(public navCtrl: NavController, public navParams: NavParams, public addpickupaddressServiceProvider: AddpickupaddressServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddPickupAddressPage');
+    this.getAddpickupaddressData();
+  }
+
+
+  getAddpickupaddressData() {
+    this.addpickupaddressServiceProvider.getAddpickupaddress().then((data) => {
+      this.addpickupaddress = data;
+      console.log(data);
+    }, (err) => {
+      console.error(err);
+    });
+
   }
 
 }

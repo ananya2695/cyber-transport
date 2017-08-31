@@ -8,5 +8,5 @@ export class BookingModel{
         subdistrict:string;
         district:string;
         province:string;
-        postcode:string;  
+        postcode:string;
     }
