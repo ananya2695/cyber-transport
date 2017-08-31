@@ -29,19 +29,19 @@ export class PickupListComponent {
     this.slides.lockSwipes(true);
   }
 
-  BacksignupShop() {
+  gotoBack() {
     this.slides.lockSwipes(false);
     this.slides.slidePrev();
     this.slides.lockSwipes(true);
   }
 
-  go2(){
+  gotoNext(){
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
 
-  go3(){
+  gotoSave(){
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
