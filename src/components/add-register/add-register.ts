@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { Slides } from "ionic-angular";
+import { Slides ,NavController} from "ionic-angular";
+import { AddPickupAddressPage } from "../../pages/add-pickup-address/add-pickup-address";
 
 /**
  * Generated class for the AddRegisterComponent component.
@@ -18,7 +19,7 @@ export class AddRegisterComponent {
 
   text: string;
 
-  constructor() {
+  constructor(public navCtrl:NavController) {
     console.log('Hello AddRegisterComponent Component');
   }
 
@@ -49,6 +50,9 @@ export class AddRegisterComponent {
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
+  }
+  gotoAddress(){
+    this.navCtrl.push(AddPickupAddressPage);
   }
 
 }
