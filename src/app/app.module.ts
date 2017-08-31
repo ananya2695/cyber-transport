@@ -70,6 +70,8 @@ import { ComfirmCardComponent } from '../components/comfirm-card/comfirm-card';
 import { BookingServiceProvider } from '../pages/booking/booking.service';
 import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
 import { RegisterPage } from "../pages/register/register";
+import { RegisterServiceProvider } from '../pages/register/register.service';
+import { AddRegisterComponent } from '../components/add-register/add-register';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -102,7 +104,8 @@ export function createTranslateLoader(http: Http) {
     RegisterPage,
     AddressCardComponent,
     AddressCardComponent,
-    ComfirmCardComponent
+    ComfirmCardComponent,
+    AddRegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -153,7 +156,8 @@ export function createTranslateLoader(http: Http) {
     EmailComposer,
     HomeServiceProvider,
     ConfirmServiceProvider,
-    BookingServiceProvider
+    BookingServiceProvider,
+    RegisterServiceProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

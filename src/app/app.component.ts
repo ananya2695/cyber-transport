@@ -10,6 +10,7 @@ import { Observable } from 'rxjs/Observable';
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
 import { HomeListComponent } from "../components/home-list/home-list";
+import { RegisterPage } from "../pages/register/register";
 // import { SettingsPage } from '../pages/settings/settings';
 // import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 
@@ -24,7 +25,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make WalkthroughPage the root (or first) page
-  rootPage: any = TabtransPage;
+  rootPage: any = RegisterPage;
   // rootPage: any = FunctionalitiesPage;
   // rootPage: any = TabsNavigationPage;
   textDir: string = "ltr";
