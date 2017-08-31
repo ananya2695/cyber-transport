@@ -35,13 +35,13 @@ export class PickupListComponent {
     this.slides.lockSwipes(true);
   }
 
-  goto2(){
+  go2(){
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
 
-  goto3(){
+  go3(){
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
