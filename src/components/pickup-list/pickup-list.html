@@ -1,4 +1,69 @@
-<!-- Generated template for the PickupListComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-content class="signup-content auth-content">
+  <ion-slides #slides>
+    <ion-slide class="slide-1">
+      <ion-list>
+
+        <ion-item>
+          <ion-label stacked>Province</ion-label>
+          <ion-input type="province"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>District</ion-label>
+          <ion-input type="district"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Subdistrict</ion-label>
+          <ion-input type="subdistrict"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Postcode</ion-label>
+          <ion-input type="postcode"></ion-input>
+        </ion-item>
+
+
+      </ion-list>
+      <button ion-button block color="secondary" (click)="goto2()">NEXT</button>
+
+    </ion-slide>
+
+    <ion-slide class="slide-2">
+      <ion-list>
+        <ion-item>
+          <ion-label stacked>Address title</ion-label>
+          <ion-input type="address title"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Address detail</ion-label>
+          <ion-input type="address detail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Mobile number</ion-label>
+          <ion-input type="Mobile number"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button block color="light"(click)="goto2()">SAVE</button>
+    </ion-slide>
+
+    <!-- <ion-slide class="slide-3">
+      <ion-list>
+        <ion-item>
+          <ion-label stacked>Account name</ion-label>
+          <ion-input type="accountname"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Account number</ion-label>
+          <ion-input type="accountnumber"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Confirm account number</ion-label>
+          <ion-input type="confirmaccountnumber"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button block color="light">SUBMIT</button>
+      <button ion-button block color="light">LATER</button>
+    </ion-slide> -->
+  </ion-slides>
+</ion-content>
