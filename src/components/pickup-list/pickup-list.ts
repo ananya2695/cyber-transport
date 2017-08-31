@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { Slides } from "ionic-angular";
+import { Slides,NavController } from "ionic-angular";
+import { BookingPage } from "../../pages/booking/booking";
 
 /**
  * Generated class for the PickupListComponent component.
@@ -14,7 +15,7 @@ import { Slides } from "ionic-angular";
 export class PickupListComponent {
   @ViewChild(Slides) slides: Slides;
   @Output() itemClicked:EventEmitter<any> = new EventEmitter<any>();
-  constructor() {
+  constructor(public navCtrl:NavController) {
     console.log('Hello PickupListComponent Component');
 
   }
@@ -45,6 +46,9 @@ export class PickupListComponent {
     this.slides.lockSwipes(false);
     this.slides.slideNext();
     this.slides.lockSwipes(true);
+  }
+  gotoBooking(){
+    this.navCtrl.push(BookingPage);
   }
 
 } 

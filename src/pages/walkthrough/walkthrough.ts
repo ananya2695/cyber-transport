@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, Slides } from 'ionic-angular';
+import { RegisterPage } from "../../pages/register/register";
 
 // import { LoginPage } from '../login/login';
 // import { SignupPage } from '../signup/signup';
@@ -37,6 +38,6 @@ export class WalkthroughPage {
   }
 
   goToSignup() {
-    // this.nav.push(SignupPage);
+    this.nav.push(RegisterPage);
   }
 }
