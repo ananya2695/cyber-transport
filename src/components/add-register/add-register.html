@@ -1,0 +1,66 @@
+<ion-content class="signup-content auth-content">
+    <ion-slides #slides>
+        <ion-slide class="slide-1">
+            <ion-list>
+
+                <ion-item>
+                    <ion-label stacked>Email</ion-label>
+                    <ion-input type="email"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label stacked>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Confirm Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>First Name</ion-label>
+                    <ion-input type="firstname"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Last Name</ion-label>
+                    <ion-input type="lastname"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Mobile</ion-label>
+                    <ion-input type="mobile"></ion-input>
+                </ion-item>
+
+            </ion-list>
+            <button ion-button block color="secondary" (click)="goto2()">Create Account</button>
+
+        </ion-slide>
+
+        <ion-slide class="slide-2">
+            <ion-list>
+                <ion-item>
+                    <ion-label stacked>Shop Name</ion-label>
+                    <ion-input type="shopname"></ion-input>
+                </ion-item>
+            </ion-list>
+            <button ion-button block color="secondary" (click)="goto2()">NEXT</button>
+        </ion-slide>
+
+        <ion-slide class="slide-3">
+            <ion-list>
+                <ion-item>
+                    <ion-label stacked>Account name</ion-label>
+                    <ion-input type="accountname"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Account number</ion-label>
+                    <ion-input type="accountnumber"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Confirm account number</ion-label>
+                    <ion-input type="confirmaccountnumber"></ion-input>
+                </ion-item>
+            </ion-list>
+            <button ion-button block color="light">SUBMIT</button>
+            <button ion-button block color="light">LATER</button>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
