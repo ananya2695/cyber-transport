@@ -18,14 +18,13 @@
     </ion-card-content>
 </ion-card> -->
 <ion-list>
-    <button ion-item>
-          <p><b>{{items.nameplace}}</b></p><br>
-          
-          <p>{{items.addressplace.address}}</p>
-                <p>{{items.addressplace.subdistrict}}
-          {{items.addressplace.district}}
-          {{items.addressplace.province}}
-          {{items.addressplace.postcode}}</p><br>
-          <p>Tel : {{items.telplace}}</p>
+    <button ion-item *ngFor="let item of items">
+          <p><b>{{item.nameplace}}</b></p><br>
+          <p>{{item.addressplace.address}}</p>
+          <p>{{item.addressplace.subdistrict}}
+          {{item.addressplace.district}}
+          {{item.addressplace.province}}
+          {{item.addressplace.postcode}}</p><br>
+          <p>Tel : {{item.telplace}}</p>
         </button>
 </ion-list>
