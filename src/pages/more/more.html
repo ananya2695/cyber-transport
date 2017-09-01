@@ -13,6 +13,31 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+    <ion-list>
+        <ion-item (click)="ReportPage()">
+            <ion-icon name="ios-paper-outline" item-start></ion-icon>
+            Report
+        </ion-item>
+        <ion-item (click)="HowtousePage()">
+            <ion-icon name="ios-information-circle-outline" item-start></ion-icon>
+            Howtouse
+        </ion-item>
+        <ion-item (click)="YourFeedbackPage()">
+            <ion-icon name="ios-trending-up-outline" item-start></ion-icon>
+            YourFeedback
+        </ion-item>
+        <ion-item (click)="TermConditionsPage()">
+            <ion-icon name="ios-document-outline" item-start></ion-icon>
+            TermConditions
+        </ion-item>
+        <ion-item (click)="SettingPage()">
+            <ion-icon name="ios-construct-outline" item-start></ion-icon>
+            Setting
+        </ion-item>
+        <ion-item (click)="LogoutPage()">
+            <ion-icon name="ios-lock-outline" item-start></ion-icon>
+            Log Out
+        </ion-item>
+    </ion-list>
 </ion-content>
