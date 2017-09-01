@@ -1,4 +1,5 @@
 export class BookingModel{
+    booking:Array<BookingModel>;
     nameplace:string;
     addressplace:Address = new Address();
     telplace:string;
