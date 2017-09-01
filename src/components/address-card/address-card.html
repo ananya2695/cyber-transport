@@ -1,12 +1,10 @@
-<ion-card>
+<!-- <ion-card>
     <ion-card-content>
-        <!-- <ion-card-header> -->
         <ion-row class="font-bold">
             <ion-col>
                 {{items.nameplace}}
             </ion-col>
         </ion-row>
-        <!-- </ion-card-header> -->
         <ion-row class="marginT">
             <ion-col>
                 {{items.addressplace.address}} {{items.addressplace.subdistrict}} {{items.addressplace.district}} {{items.addressplace.province}} {{items.addressplace.postcode}}
@@ -18,4 +16,16 @@
             </ion-col>
         </ion-row>
     </ion-card-content>
-</ion-card>
+</ion-card> -->
+<ion-list>
+    <button ion-item>
+          <p><b>{{items.nameplace}}</b></p><br>
+          
+          <p>{{items.addressplace.address}}</p>
+                <p>{{items.addressplace.subdistrict}}
+          {{items.addressplace.district}}
+          {{items.addressplace.province}}
+          {{items.addressplace.postcode}}</p><br>
+          <p>Tel : {{items.telplace}}</p>
+        </button>
+</ion-list>
