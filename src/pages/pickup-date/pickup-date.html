@@ -7,12 +7,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pickupDate</ion-title>
+    <ion-title>PICKUP DATE</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  
+
+  <list-datetimes [items]="pickupdate.items" (click)="itemSelected()"></list-datetimes>
 
 </ion-content>

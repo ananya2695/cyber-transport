@@ -18,6 +18,9 @@ import { SummaryPage } from "../pages/summary/summary";
 
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
+import { PickupDatePage } from "../pages/pickup-date/pickup-date";
+import { PickupTimePage } from "../pages/pickup-time/pickup-time";
+import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
 
 @Component({
   selector: 'app-root',

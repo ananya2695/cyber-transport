@@ -72,7 +72,7 @@ import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-add
 import { RegisterPage } from "../pages/register/register";
 import { CalculatePage } from "../pages/calculate/calculate";
 import { SummaryPage } from "../pages/summary/summary";
-
+import { PickupDatePage } from "../pages/pickup-date/pickup-date";
 import { AddpickupaddressServiceProvider } from '../pages/add-pickup-address/add-pickup-address.service';
 import { PickupListComponent } from '../components/pickup-list/pickup-list';
 import { AddRegisterComponent } from "../components/add-register/add-register";
@@ -82,6 +82,12 @@ import { CalculateServiceProvider } from '../pages/calculate/calculate.service';
 import { SummaryServiceProvider } from '../pages/summary/summary.service';
 import { CalculationComponent } from '../components/calculation/calculation';
 import { SummaryDetailComponent } from '../components/summary-detail/summary-detail';
+import { PickupDateServiceProvider } from '../pages/pickup-date/pickup-date.service';
+import { PickupTimeServiceProvider } from '../pages/pickup-time/pickup-time.service';
+import { PickupTimePage } from "../pages/pickup-time/pickup-time";
+import { NumberParcelServiceProvider } from '../pages/number-parcel/number-parcel.service';
+import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
+import { ListDatetimesComponent } from '../components/list-datetimes/list-datetimes';
 
 
 
@@ -116,15 +122,19 @@ export function createTranslateLoader(http: Http) {
     RegisterPage,
     CalculatePage,
     SummaryPage,
+    PickupDatePage,
+    PickupTimePage,
+    NumberParcelPage,
     AddressCardComponent,
     AddressCardComponent,
     ComfirmCardComponent,
-
     PickupListComponent,
 
     AddRegisterComponent,
     CalculationComponent,
-    SummaryDetailComponent
+    SummaryDetailComponent,
+    AddRegisterComponent,
+    ListDatetimesComponent
 
   ],
   imports: [
@@ -155,7 +165,11 @@ export function createTranslateLoader(http: Http) {
     RegisterPage,
     ConfirmPage,
     CalculatePage,
-    SummaryPage
+    SummaryPage,
+    PickupDatePage,
+    PickupTimePage,
+    NumberParcelPage,
+    ConfirmPage
   ],
   providers: [
     // GoogleMapsService,
@@ -185,6 +199,9 @@ export function createTranslateLoader(http: Http) {
     RegisterServiceProvider,
     CalculateServiceProvider,
     SummaryServiceProvider,
+    PickupDateServiceProvider,
+    PickupTimeServiceProvider,
+    NumberParcelServiceProvider
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
