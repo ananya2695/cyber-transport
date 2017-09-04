@@ -71,6 +71,7 @@ import { BookingServiceProvider } from '../pages/booking/booking.service';
 import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
 import { RegisterPage } from "../pages/register/register";
 import { CalculatePage } from "../pages/calculate/calculate";
+import { SummaryPage } from "../pages/summary/summary";
 
 import { AddpickupaddressServiceProvider } from '../pages/add-pickup-address/add-pickup-address.service';
 import { PickupListComponent } from '../components/pickup-list/pickup-list';
@@ -78,6 +79,9 @@ import { AddRegisterComponent } from "../components/add-register/add-register";
 
 import { RegisterServiceProvider } from '../pages/register/register.service';
 import { CalculateServiceProvider } from '../pages/calculate/calculate.service';
+import { SummaryServiceProvider } from '../pages/summary/summary.service';
+import { CalculationComponent } from '../components/calculation/calculation';
+import { SummaryDetailComponent } from '../components/summary-detail/summary-detail';
 
 
 
@@ -111,13 +115,16 @@ export function createTranslateLoader(http: Http) {
     AddPickupAddressPage,
     RegisterPage,
     CalculatePage,
+    SummaryPage,
     AddressCardComponent,
     AddressCardComponent,
     ComfirmCardComponent,
 
     PickupListComponent,
 
-    AddRegisterComponent
+    AddRegisterComponent,
+    CalculationComponent,
+    SummaryDetailComponent
 
   ],
   imports: [
@@ -147,7 +154,8 @@ export function createTranslateLoader(http: Http) {
     AddPickupAddressPage,
     RegisterPage,
     ConfirmPage,
-    CalculatePage
+    CalculatePage,
+    SummaryPage
   ],
   providers: [
     // GoogleMapsService,
@@ -176,6 +184,7 @@ export function createTranslateLoader(http: Http) {
 
     RegisterServiceProvider,
     CalculateServiceProvider,
+    SummaryServiceProvider,
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

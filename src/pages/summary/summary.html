@@ -6,13 +6,39 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>summary</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>summary</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <summary-detail [items]="summary"></summary-detail>
 
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <ion-row>
+            <ion-col>
+                Subtotal :
+            </ion-col>
+            <ion-col text-right>{{summary.subtotal}} ฿</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                Surcharge :
+            </ion-col>
+            <ion-col text-right>{{summary.surcharge}} ฿</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                Total :
+            </ion-col>
+            <ion-col text-right>{{summary.total}} ฿</ion-col>
+        </ion-row>
+        <button ion-button block color="secondary">
+                  DONE
+                </button>
+    </ion-toolbar>
+</ion-footer>

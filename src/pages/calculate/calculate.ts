@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CalculateServiceProvider } from "./calculate.service";
 import { CalculateModel } from "./calculate.model";
+import { SummaryPage } from "../../pages/summary/summary";
 
 /**
  * Generated class for the CalculatePage page.
@@ -15,9 +16,10 @@ import { CalculateModel } from "./calculate.model";
   templateUrl: 'calculate.html',
 })
 export class CalculatePage {
-  calculate: CalculateModel = new CalculateModel;
+  testing: string = 'lamunphan';
+  calculate: CalculateModel = new CalculateModel();
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public calculateServiceProvider:CalculateServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public calculateServiceProvider: CalculateServiceProvider) {
   }
 
   ionViewDidLoad() {
@@ -32,6 +34,9 @@ export class CalculatePage {
       console.error(err);
     });
 
+  }
+  gotoSummary(){
+    this.navCtrl.push(SummaryPage);
   }
 
 }

@@ -1,0 +1,17 @@
+<ion-list *ngFor="let item of items.provider">
+    <button ion-item *ngFor="let itm of item.rates">
+    <ion-row>
+       <ion-col>
+        <p>{{item.name}}</p>
+      </ion-col>  
+    </ion-row>
+    <ion-row>
+        <ion-col>
+          <p>{{itm.name}}</p>
+        </ion-col>
+        <ion-col>
+          <p>{{itm.value}} ฿ x {{itm.qty}}</p>
+        </ion-col>
+    </ion-row>
+  </button>
+</ion-list>

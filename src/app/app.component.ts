@@ -12,6 +12,7 @@ import { TabtransPage } from "../pages/tabtrans/tabtrans";
 import { HomeListComponent } from "../components/home-list/home-list";
 import { RegisterPage } from "../pages/register/register";
 import { CalculatePage } from "../pages/calculate/calculate";
+import { SummaryPage } from "../pages/summary/summary";
 // import { SettingsPage } from '../pages/settings/settings';
 // import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 

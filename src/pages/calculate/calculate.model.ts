@@ -1,13 +1,13 @@
 export class CalculateModel {
-   provider:Array<Provider>;
+   lamunphan:Rates2 = new Rates2();
+   thaipost:Rates2 = new Rates2();
     
-}
-export class Provider{
-    name : string;
-    rates: Array<Rates>;
 }
 export class Rates{
     name : string;
     description : string;
     value : string;
+}
+export class Rates2{
+    rates:Array<Rates>
 }

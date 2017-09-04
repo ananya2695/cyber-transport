@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
     <ion-navbar>
         <ion-title>calculate</ion-title>
@@ -20,4 +20,68 @@
         </ion-col>
     </ion-row>
 
+</ion-content> -->
+
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Calculate</ion-title>
+    </ion-navbar>
+
+</ion-header>
+<!-- <ion-content class="forms-validations-content">
+    <ion-segment [(ngModel)]="testing" class="forms-examples-segment" color="light">
+        <ion-segment-button value="lamunphan">lamunphan</ion-segment-button>
+        <ion-segment-button value="thaipost">thaipost</ion-segment-button>
+    </ion-segment>
+    <ion-list padding *ngIf="testing==='lamunphan'" ngSelected="selected">
+        <calculation [items]="calculate.provider"></calculation> -->
+<!-- <shipping [datapayment]="shipping" [listdataaddress]="listaddress" (clickp)="shippingevent($event)"></shipping> -->
+<!-- </ion-list>
+    <ion-list padding *ngIf="testing==='thaipost'"> -->
+<!-- <payment [paymentgateway]="payment" (paygateway)="paymentgateway($event)"></payment> -->
+<!-- </ion-list>
+
+</ion-content> -->
+
+<ion-content>
+    <!-- <ion-toolbar no-border-top> -->
+    <ion-segment [(ngModel)]="testing">
+        <ion-segment-button value="lamunphan">
+            Lamunphan
+        </ion-segment-button>
+        <ion-segment-button value="thaipost">
+            Thaipost
+        </ion-segment-button>
+    </ion-segment>
+    <!-- </ion-toolbar> -->
+
+    <div [ngSwitch]="testing">
+        <div *ngSwitchCase="'lamunphan'">
+            <!-- <history [historyData]="historys.paid.listorder" [amount]="historys.paid.amount"></history> -->
+            <calculation [items]="calculate.lamunphan.rates"></calculation>
+        </div>
+        <div *ngSwitchCase="'thaipost'">
+            <!-- <history [historyData]="historys.unpay.listorder" [amount]="historys.unpay.amount"></history> -->
+            <calculation [items]="calculate.thaipost.rates"></calculation>
+        </div>
+    </div>
+
+
+
 </ion-content>
+
+
+<ion-footer>
+    <ion-toolbar>
+        <button ion-button block color="secondary" (click)="gotoSummary()">
+                  Calculation
+                </button>
+    </ion-toolbar>
+</ion-footer>

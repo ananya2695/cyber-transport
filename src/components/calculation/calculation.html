@@ -1,0 +1,28 @@
+<!-- Generated template for the CalculationComponent component -->
+<!-- <div *ngFor="let item of items">
+    
+</div> -->
+<ion-list>
+    <button ion-item *ngFor="let itm of items">
+          <ion-row >
+            <ion-col>
+             <p>{{itm.name}}</p>
+              </ion-col> 
+          </ion-row>
+          <ion-row >
+          <ion-col>
+              <p>{{itm.description}}</p>
+               </ion-col> 
+               <ion-col>
+                 <ion-item>
+                  <ion-input type="text" placeholder="0"></ion-input>
+                 </ion-item>
+                   </ion-col> 
+                  </ion-row>
+                  <ion-row >
+                      <ion-col>
+                       <p>{{itm.value}}</p>
+                        </ion-col> 
+                    </ion-row>
+            </button>
+</ion-list>

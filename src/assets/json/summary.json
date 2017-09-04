@@ -1,0 +1,22 @@
+{
+    "provider": [{
+        "name": "lamunphan",
+        "rates": [{
+            "name": "Box 0",
+            "description": "0-35 cm",
+            "value": 35,
+            "qty": 1
+        }]
+    }, {
+        "name": "thaipost",
+        "rates": [{
+            "name": "Weight",
+            "description": "0-20",
+            "value": 52,
+            "qty": 1
+        }]
+    }],
+    "subtotal": 35,
+    "surcharge": 70,
+    "total": 105
+}
