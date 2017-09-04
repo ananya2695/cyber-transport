@@ -16,6 +16,7 @@ import { RegisterPage } from "../pages/register/register";
 
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
+import { PickupDatePage } from "../pages/pickup-date/pickup-date";
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,7 @@ export class MyApp {
 
   // make WalkthroughPage the root (or first) page
 
-  rootPage: any = TabtransPage;
+  rootPage: any = PickupDatePage;
 
 
 

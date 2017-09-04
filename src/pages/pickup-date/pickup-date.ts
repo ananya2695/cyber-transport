@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PickupdateModel } from "./pickup-date.model";
+import { PickupDateServiceProvider } from "./pickup-date.service";
 
 /**
  * Generated class for the PickupDatePage page.
@@ -13,12 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pickup-date.html',
 })
 export class PickupDatePage {
+  pickupdate:PickupdateModel = new PickupdateModel
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public pickupDateServiceProvider:PickupDateServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PickupDatePage');
+    this.getPickupdateData();
   }
 
+  getPickupdateData() {
+    this.pickupDateServiceProvider.getPickupdate().then((data) => {
+      this.pickupdate = data;
+      console.log(data);
+    }, (err) => {
+      console.error(err);
+    });
+
+  } 
 }
