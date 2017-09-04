@@ -81,6 +81,7 @@ import { PickupTimeServiceProvider } from '../pages/pickup-time/pickup-time.serv
 import { PickupTimePage } from "../pages/pickup-time/pickup-time";
 import { NumberParcelServiceProvider } from '../pages/number-parcel/number-parcel.service';
 import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
+import { ListDatetimesComponent } from '../components/list-datetimes/list-datetimes';
 
 
 
@@ -121,6 +122,7 @@ export function createTranslateLoader(http: Http) {
     ComfirmCardComponent,
     PickupListComponent,
     AddRegisterComponent,
+    ListDatetimesComponent,
   
 
   ],

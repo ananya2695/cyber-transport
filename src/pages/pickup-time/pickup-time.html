@@ -14,10 +14,6 @@
 
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of pickuptime.times" (click)="itemSelected(item)">
-          {{ item.time }}
-        </button>
-  </ion-list>
+    <list-datetimes [items]="pickuptime.items" (click)="itemSelected()"></list-datetimes>
 
 </ion-content>

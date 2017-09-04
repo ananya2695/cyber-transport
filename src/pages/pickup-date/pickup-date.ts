@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PickupdateModel } from "./pickup-date.model";
 import { PickupDateServiceProvider } from "./pickup-date.service";
-
+import { PickupTimePage } from "../../pages/pickup-time/pickup-time";
 /**
  * Generated class for the PickupDatePage page.
  *
@@ -33,5 +33,8 @@ export class PickupDatePage {
       console.error(err);
     });
 
+  }
+  itemSelected() {
+    this.navCtrl.push(PickupTimePage);
   }
 }

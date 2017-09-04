@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ConfirmModel } from "./confirm.model";
 import { ConfirmServiceProvider } from "../confirm/confirm.service";
-
+import { NumberParcelPage } from "../../pages/number-parcel/number-parcel";
 /**
  * Generated class for the ConfirmPage page.
  *
@@ -16,7 +16,7 @@ import { ConfirmServiceProvider } from "../confirm/confirm.service";
 })
 export class ConfirmPage {
   confirm: ConfirmModel = new ConfirmModel();
-  constructor(public navCtrl: NavController, public navParams: NavParams,public confirmServiceProvider:ConfirmServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public confirmServiceProvider: ConfirmServiceProvider) {
   }
 
   ionViewDidLoad() {
@@ -32,7 +32,9 @@ export class ConfirmPage {
     });
 
   }
-  
 
+  itemSelected() {
+    this.navCtrl.push(NumberParcelPage);
+  }
 
 }

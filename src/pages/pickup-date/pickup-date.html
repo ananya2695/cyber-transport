@@ -14,17 +14,8 @@
 
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let day of pickupdate.date" (click)="itemSelected(item)">
-          {{ day.day}}  {{day.month}} {{day.year}}
-        </button>
-  </ion-list>
+  
 
-  <!-- <ion-row *ngFor="let day of pickupdate.date">
-    <ion-col>
-      {{day.day}} {{day.month}} {{day.year}}
-
-    </ion-col>
-  </ion-row> -->
+  <list-datetimes [items]="pickupdate.items" (click)="itemSelected()"></list-datetimes>
 
 </ion-content>

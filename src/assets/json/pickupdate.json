@@ -1,29 +1,19 @@
 {
-    "date": [
+    "items": [
         {
-            "day": "4",
-            "month": "August",
-            "year": "2017"
+            "value": "4 August 2017"
         },
         {
-            "day": "5",
-            "month": "August",
-            "year": "2017"
+            "value": "5 August 2017"
         },
         {
-            "day": "6",
-            "month": "August",
-            "year": "2017"
+            "value": "6 August 2017"
         },
         {
-            "day": "7",
-            "month": "August",
-            "year": "2017"
+            "value": "7 August 2017"
         },
         {
-            "day": "8",
-            "month": "August",
-            "year": "2017"
+            "value": "8 August 2017"
         }
     ]
 }

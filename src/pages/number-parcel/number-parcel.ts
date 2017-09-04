@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NumberparcelModel } from "./number-parcel.model";
 import { NumberParcelServiceProvider } from "./number-parcel.service";
+import { ConfirmPage } from "../../pages/confirm/confirm";
 /**
  * Generated class for the NumberParcelPage page.
  *
@@ -31,5 +32,7 @@ export class NumberParcelPage {
     });
 
   }
-
+  itemSelected(){
+    this.navCtrl.push(ConfirmPage);
+  }
 }
