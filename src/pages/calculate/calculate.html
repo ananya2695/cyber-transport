@@ -6,13 +6,18 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>calculate</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>calculate</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <ion-row *ngFor="let item of calculate.provider">
+        <ion-col>
+            <p>{{item.name}}</p>
+        </ion-col>
+    </ion-row>
 
 </ion-content>

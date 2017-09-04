@@ -1,0 +1,17 @@
+{
+    "provider": [{
+        "name": "lamunphan",
+        "rates": [{
+            "name": "",
+            "description": "",
+            "value": ""
+        }]
+    }, {
+        "name": "thaipost",
+        "rates": [{
+            "name": "",
+            "description": "",
+            "value": ""
+        }]
+    }]
+}

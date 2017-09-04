@@ -70,12 +70,14 @@ import { ComfirmCardComponent } from '../components/comfirm-card/comfirm-card';
 import { BookingServiceProvider } from '../pages/booking/booking.service';
 import { AddPickupAddressPage } from "../pages/add-pickup-address/add-pickup-address";
 import { RegisterPage } from "../pages/register/register";
+import { CalculatePage } from "../pages/calculate/calculate";
 
 import { AddpickupaddressServiceProvider } from '../pages/add-pickup-address/add-pickup-address.service';
 import { PickupListComponent } from '../components/pickup-list/pickup-list';
 import { AddRegisterComponent } from "../components/add-register/add-register";
 
 import { RegisterServiceProvider } from '../pages/register/register.service';
+import { CalculateServiceProvider } from '../pages/calculate/calculate.service';
 
 
 
@@ -108,6 +110,7 @@ export function createTranslateLoader(http: Http) {
     MorePage,
     AddPickupAddressPage,
     RegisterPage,
+    CalculatePage,
     AddressCardComponent,
     AddressCardComponent,
     ComfirmCardComponent,
@@ -143,7 +146,8 @@ export function createTranslateLoader(http: Http) {
     MorePage,
     AddPickupAddressPage,
     RegisterPage,
-    ConfirmPage
+    ConfirmPage,
+    CalculatePage
   ],
   providers: [
     // GoogleMapsService,
@@ -170,7 +174,8 @@ export function createTranslateLoader(http: Http) {
 
     AddpickupaddressServiceProvider,
 
-    RegisterServiceProvider
+    RegisterServiceProvider,
+    CalculateServiceProvider,
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

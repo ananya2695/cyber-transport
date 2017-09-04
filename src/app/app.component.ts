@@ -11,6 +11,7 @@ import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { TabtransPage } from "../pages/tabtrans/tabtrans";
 import { HomeListComponent } from "../components/home-list/home-list";
 import { RegisterPage } from "../pages/register/register";
+import { CalculatePage } from "../pages/calculate/calculate";
 // import { SettingsPage } from '../pages/settings/settings';
 // import { FunctionalitiesPage } from '../pages/functionalities/functionalities';
 
@@ -27,7 +28,7 @@ export class MyApp {
 
   // make WalkthroughPage the root (or first) page
 
-  rootPage: any = TabtransPage;
+  rootPage: any = CalculatePage;
 
 
 
