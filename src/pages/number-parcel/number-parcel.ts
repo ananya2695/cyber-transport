@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { NumberparcelModel } from "./number-parcel.model";
+import { NumberParcelServiceProvider } from "./number-parcel.service";
 /**
  * Generated class for the NumberParcelPage page.
  *
@@ -13,12 +14,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'number-parcel.html',
 })
 export class NumberParcelPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  numberparcel: NumberparcelModel = new NumberparcelModel
+  constructor(public navCtrl: NavController, public navParams: NavParams, public numberParcelServiceProvider: NumberParcelServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NumberParcelPage');
+    this.getNumberparcelData();
+  }
+  getNumberparcelData() {
+    this.numberParcelServiceProvider.getNumberparcel().then((data) => {
+      this.numberparcel = data;
+      console.log(data);
+    }, (err) => {
+      console.error(err);
+    });
+
   }
 
 }

@@ -15,9 +15,9 @@ import { PickupDateServiceProvider } from "./pickup-date.service";
   templateUrl: 'pickup-date.html',
 })
 export class PickupDatePage {
-  pickupdate:PickupdateModel = new PickupdateModel
+  pickupdate: PickupdateModel = new PickupdateModel
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public pickupDateServiceProvider:PickupDateServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pickupDateServiceProvider: PickupDateServiceProvider) {
   }
 
   ionViewDidLoad() {
@@ -33,5 +33,5 @@ export class PickupDatePage {
       console.error(err);
     });
 
-  } 
+  }
 }

@@ -77,6 +77,10 @@ import { AddRegisterComponent } from "../components/add-register/add-register";
 
 import { RegisterServiceProvider } from '../pages/register/register.service';
 import { PickupDateServiceProvider } from '../pages/pickup-date/pickup-date.service';
+import { PickupTimeServiceProvider } from '../pages/pickup-time/pickup-time.service';
+import { PickupTimePage } from "../pages/pickup-time/pickup-time";
+import { NumberParcelServiceProvider } from '../pages/number-parcel/number-parcel.service';
+import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
 
 
 
@@ -110,6 +114,8 @@ export function createTranslateLoader(http: Http) {
     AddPickupAddressPage,
     RegisterPage,
     PickupDatePage,
+    PickupTimePage,
+    NumberParcelPage,
     AddressCardComponent,
     AddressCardComponent,
     ComfirmCardComponent,
@@ -145,6 +151,8 @@ export function createTranslateLoader(http: Http) {
     AddPickupAddressPage,
     RegisterPage,
     PickupDatePage,
+    PickupTimePage,
+    NumberParcelPage,
     ConfirmPage
   ],
   providers: [
@@ -173,7 +181,9 @@ export function createTranslateLoader(http: Http) {
     AddpickupaddressServiceProvider,
 
     RegisterServiceProvider,
-    PickupDateServiceProvider
+    PickupDateServiceProvider,
+    PickupTimeServiceProvider,
+    NumberParcelServiceProvider
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
