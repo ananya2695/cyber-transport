@@ -6,24 +6,39 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>NUMBER OF PARCEL</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>NUMBER OF PARCEL</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
-
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-label floating>Number Parcel</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-  </ion-list>
-  <div padding>
-    <button ion-button block color="secondary" (click)="itemSelected()">
-NEXT
+    <!-- <ion-toolbar no-border-top> -->
+    <ion-segment [(ngModel)]="testing">
+        <ion-segment-button value="lamunphan">
+            Lamunphan
+        </ion-segment-button>
+        <ion-segment-button value="thaipost">
+            Thaipost
+        </ion-segment-button>
+    </ion-segment>
+    <!-- </ion-toolbar> -->
 
-    </button>
-  </div>
+    <div [ngSwitch]="testing">
+        <div *ngSwitchCase="'lamunphan'">
+            <!-- <history [historyData]="historys.paid.listorder" [amount]="historys.paid.amount"></history> -->
+            <calculation [items]="numberparcel.lamunphan.rates"></calculation>
+        </div>
+        <div *ngSwitchCase="'thaipost'">
+            <!-- <history [historyData]="historys.unpay.listorder" [amount]="historys.unpay.amount"></history> -->
+            <calculation [items]="numberparcel.thaipost.rates"></calculation>
+        </div>
+    </div>
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <button ion-button block color="secondary" (click)="itemSelected()">
+            NEXT
+                </button>
+    </ion-toolbar>
+</ion-footer>
