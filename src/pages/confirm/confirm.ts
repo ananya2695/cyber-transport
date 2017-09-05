@@ -4,6 +4,7 @@ import { ConfirmModel } from "./confirm.model";
 import { ConfirmServiceProvider } from "../confirm/confirm.service";
 import { NumberParcelPage } from "../../pages/number-parcel/number-parcel";
 import { CalculatePage } from "../calculate/calculate";
+import { HomePage } from "../../pages/home/home";
 /**
  * Generated class for the ConfirmPage page.
  *
@@ -39,6 +40,9 @@ export class ConfirmPage {
   }
   gotoCal(){
     this.navCtrl.push(CalculatePage);
+  }
+  gotoHome(){
+    this.navCtrl.push(HomePage);
   }
 
 }

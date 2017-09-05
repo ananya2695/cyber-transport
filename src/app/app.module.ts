@@ -91,6 +91,7 @@ import { ListDatetimesComponent } from '../components/list-datetimes/list-dateti
 import { SlideTabsComponent } from '../components/slide-tabs/slide-tabs';
 import { DeliveryaddressServiceProvider } from "../pages/delivery-address/delivery-address.service";
 import { DeliveryAddressPage } from "../pages/delivery-address/delivery-address";
+import { DeliveryListComponent } from '../components/delivery-list/delivery-list';
 
 
 
@@ -139,7 +140,8 @@ export function createTranslateLoader(http: Http) {
     SummaryDetailComponent,
     AddRegisterComponent,
     ListDatetimesComponent,
-    SlideTabsComponent
+    SlideTabsComponent,
+    DeliveryListComponent
 
   ],
   imports: [

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { NumberparcelModel } from "./number-parcel.model";
+import { NumberParcelModel } from "./number-parcel.model";
 import { NumberParcelServiceProvider } from "./number-parcel.service";
 import { ConfirmPage } from "../../pages/confirm/confirm";
+import { BookingPage } from "../../pages/booking/booking";
+import { AddPickupAddressPage } from "../../pages/add-pickup-address/add-pickup-address";
 /**
  * Generated class for the NumberParcelPage page.
  *
@@ -15,7 +17,9 @@ import { ConfirmPage } from "../../pages/confirm/confirm";
   templateUrl: 'number-parcel.html',
 })
 export class NumberParcelPage {
-  numberparcel: NumberparcelModel = new NumberparcelModel
+
+  testing: string = 'lamunphan';
+  numberparcel: NumberParcelModel = new NumberParcelModel();
   constructor(public navCtrl: NavController, public navParams: NavParams, public numberParcelServiceProvider: NumberParcelServiceProvider) {
   }
 
@@ -32,7 +36,10 @@ export class NumberParcelPage {
     });
 
   }
-  itemSelected(){
-    this.navCtrl.push(ConfirmPage);
+  // itemSelected(){
+  //   this.navCtrl.push(ConfirmPage);
+  // }
+  gotoAddress(){
+    this.navCtrl.push(AddPickupAddressPage);
   }
 }

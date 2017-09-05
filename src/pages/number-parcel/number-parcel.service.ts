@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
-import { NumberparcelModel } from "./number-parcel.model";
+import { NumberParcelModel } from "./number-parcel.model";
 
 /*
   Generated class for the NumberParcelServiceProvider provider.
@@ -16,10 +16,10 @@ export class NumberParcelServiceProvider {
   constructor(public http: Http) {
     console.log('Hello NumberParcelServiceProvider Provider');
   }
-  getNumberparcel(): Promise<NumberparcelModel> {
+  getNumberparcel(): Promise<NumberParcelModel> {
     return this.http.get('./assets/json/numberparcel.json')
       .toPromise()
-      .then(response => response.json() as NumberparcelModel)
+      .then(response => response.json() as NumberParcelModel)
       .catch(this.handleError);
   }
   private handleError(error: any): Promise<any> {

@@ -20,5 +20,33 @@
             "img": "http://icons.iconarchive.com/icons/musett/antares/256/Dashboard-icon.png",
             "total": 0
         }
-    ]
+    ],
+    "currentbooking": {
+        "date": "Tue",
+        "time": "13:00-14:30",
+        "staffcode": "234",
+        "pickupaddress": "Bang Bon",
+        "deliveryaddress": "Lumlookka",
+        "items": [{
+            "name": "Box",
+            "description": "Box1",
+            "value": "45",
+            "qty": "1"
+        }, {
+            "name": "Box2",
+            "description": "Box1",
+            "value": "45",
+            "qty": "2"
+        }, {
+            "name": "Box3",
+            "description": "Box1",
+            "value": "45",
+            "qty": "1"
+        }, {
+            "name": "Box4",
+            "description": "Box1",
+            "value": "45",
+            "qty": "2"
+        }]
+    }
 }

@@ -30,3 +30,29 @@
 
     </ion-card-content>
 </ion-card>
+<ion-card>
+    <ion-card-content>
+        <!-- <ion-card-header> -->
+        <ion-row>
+            <ion-col class="font-bold">Delivery Place</ion-col>
+            <ion-col text-right>{{items.dateplace}}</ion-col>
+        </ion-row>
+        <ion-row class="font-bold marginT">
+            <ion-col>
+                {{items.name}}
+            </ion-col>
+        </ion-row>
+        <!-- </ion-card-header> -->
+        <ion-row class="marginT">
+            <ion-col>
+                {{items.address.address}} {{items.address.subdistrict}} {{items.address.district}} {{items.address.province}} {{items.address.postcode}}
+            </ion-col>
+        </ion-row>
+        <ion-row class="marginT">
+            <ion-col>
+                Tel : {{items.tel}}
+            </ion-col>
+        </ion-row>
+
+    </ion-card-content>
+</ion-card>

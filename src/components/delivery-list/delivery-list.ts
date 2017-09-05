@@ -1,19 +1,18 @@
-import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { Slides,NavController } from "ionic-angular";
-import { BookingPage } from "../../pages/booking/booking";
+import { Component, ViewChild, Output, EventEmitter } from '@angular/core';
+import { Slides, NavController } from "ionic-angular";
 import { ConfirmPage } from "../../pages/confirm/confirm";
 
 /**
- * Generated class for the PickupListComponent component.
+ * Generated class for the DeliveryListComponent component.
  *
  * See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
  * for more info on Angular Components.
  */
 @Component({
-  selector: 'pickup-list',
-  templateUrl: 'pickup-list.html'
+  selector: 'delivery-list',
+  templateUrl: 'delivery-list.html'
 })
-export class PickupListComponent {
+export class DeliveryListComponent {
   @ViewChild(Slides) slides: Slides;
   @Output() itemClicked:EventEmitter<any> = new EventEmitter<any>();
   constructor(public navCtrl:NavController) {
@@ -48,11 +47,7 @@ export class PickupListComponent {
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
-  gotoBooking(){
-    this.navCtrl.push(BookingPage);
-  }
-
   gotoConfirm(){
     this.navCtrl.push(ConfirmPage);
   }
-} 
+}
