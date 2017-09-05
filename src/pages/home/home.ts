@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomeServiceProvider } from "./home.service";
 import { HomeModel } from "./home.model";
 import { BookingPage } from "../booking/booking";
+import { SenderActionPage } from "../sender-action/sender-action";
 /**
  * Generated class for the HomePage page.
  *
@@ -35,5 +36,8 @@ home: HomeModel = new HomeModel();
  
   gotoBooking(){
     this.navCtrl.push(BookingPage);
+  }
+  gotoTabs(){
+    this.navCtrl.push(SenderActionPage);
   }
 }

@@ -14,9 +14,9 @@
 
 
 <ion-content padding>
-    <address-card [items]="booking.items" (click)="gotoConfirm()"></address-card>
+    <address-card [items]="booking.items" (click)="gotoDate()"></address-card>
 
     <ion-fab right bottom>
-        <button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+        <button ion-fab color="secondary" (click)="gotoPickup()"><ion-icon name="add"></ion-icon></button>
     </ion-fab>
 </ion-content>

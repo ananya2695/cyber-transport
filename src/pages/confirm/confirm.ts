@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ConfirmModel } from "./confirm.model";
 import { ConfirmServiceProvider } from "../confirm/confirm.service";
 import { NumberParcelPage } from "../../pages/number-parcel/number-parcel";
+import { CalculatePage } from "../calculate/calculate";
 /**
  * Generated class for the ConfirmPage page.
  *
@@ -35,6 +36,9 @@ export class ConfirmPage {
 
   itemSelected() {
     this.navCtrl.push(NumberParcelPage);
+  }
+  gotoCal(){
+    this.navCtrl.push(CalculatePage);
   }
 
 }

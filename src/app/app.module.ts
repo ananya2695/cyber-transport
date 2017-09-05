@@ -88,6 +88,7 @@ import { PickupTimePage } from "../pages/pickup-time/pickup-time";
 import { NumberParcelServiceProvider } from '../pages/number-parcel/number-parcel.service';
 import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
 import { ListDatetimesComponent } from '../components/list-datetimes/list-datetimes';
+import { SlideTabsComponent } from '../components/slide-tabs/slide-tabs';
 
 
 
@@ -134,7 +135,8 @@ export function createTranslateLoader(http: Http) {
     CalculationComponent,
     SummaryDetailComponent,
     AddRegisterComponent,
-    ListDatetimesComponent
+    ListDatetimesComponent,
+    SlideTabsComponent
 
   ],
   imports: [

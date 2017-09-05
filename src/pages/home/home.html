@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-    <home-list [items]="home.items"></home-list>
+    <home-list [items]="home.items" (click)="gotoTabs()"></home-list>
 </ion-content>
 <ion-footer>
     <ion-toolbar>

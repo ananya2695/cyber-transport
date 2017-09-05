@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BookingModel } from "./booking.model";
 import { BookingServiceProvider } from "./booking.service";
 import { ConfirmPage } from "../confirm/confirm";
+import { AddPickupAddressPage } from "../add-pickup-address/add-pickup-address";
+import { PickupDatePage } from "../pickup-date/pickup-date";
 
 
 /**
@@ -34,8 +36,10 @@ export class BookingPage {
     });
 
   }
-  gotoConfirm(){
-    this.navCtrl.push(ConfirmPage);
+  gotoDate(){
+    this.navCtrl.push(PickupDatePage);
   }
-
+  gotoPickup(){
+    this.navCtrl.push(AddPickupAddressPage);
+  }
 }

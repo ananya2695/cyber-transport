@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { Slides ,NavController} from "ionic-angular";
 import { AddPickupAddressPage } from "../../pages/add-pickup-address/add-pickup-address";
+import { TabtransPage } from "../../pages/tabtrans/tabtrans";
 
 /**
  * Generated class for the AddRegisterComponent component.
@@ -51,8 +52,8 @@ export class AddRegisterComponent {
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
-  gotoAddress(){
-    this.navCtrl.push(AddPickupAddressPage);
+  gotoHome(){
+    this.navCtrl.push(TabtransPage);
   }
 
 }
