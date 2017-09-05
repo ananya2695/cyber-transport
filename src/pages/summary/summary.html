@@ -21,21 +21,23 @@
     <ion-toolbar>
         <ion-row>
             <ion-col>
-                Subtotal :
+                Subtotal 1 QTY :
             </ion-col>
             <ion-col text-right>{{summary.subtotal}} ฿</ion-col>
         </ion-row>
         <ion-row>
             <ion-col>
-                Surcharge :
+                Pickup Surcharge :
             </ion-col>
             <ion-col text-right>{{summary.surcharge}} ฿</ion-col>
         </ion-row>
         <ion-row>
             <ion-col>
-                Total :
+                Total estimate :
             </ion-col>
-            <ion-col text-right>{{summary.total}} ฿</ion-col>
+            <ion-col text-right style="font-size:20px">
+                <b>{{summary.total}} ฿</b>
+            </ion-col>
         </ion-row>
         <button ion-button block color="secondary">
                   DONE
