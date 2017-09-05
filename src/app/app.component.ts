@@ -32,7 +32,7 @@ export class MyApp {
 
   // make WalkthroughPage the root (or first) page
 
-  rootPage: any = SummaryPage;
+  rootPage: any = CalculatePage;
 
 
 
