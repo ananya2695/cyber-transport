@@ -22,6 +22,7 @@ import { PickupDatePage } from "../pages/pickup-date/pickup-date";
 import { PickupTimePage } from "../pages/pickup-time/pickup-time";
 import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
 import { SenderActionPage } from "../pages/sender-action/sender-action";
+import { DeliveryAddressPage } from "../pages/delivery-address/delivery-address";
 @Component({
   selector: 'app-root',
   templateUrl: 'app.html'
@@ -32,7 +33,7 @@ export class MyApp {
 
   // make WalkthroughPage the root (or first) page
 
-  rootPage: any = WalkthroughPage;
+  rootPage: any = DeliveryAddressPage;
 
 
 

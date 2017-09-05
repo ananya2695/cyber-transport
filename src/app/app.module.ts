@@ -89,6 +89,8 @@ import { NumberParcelServiceProvider } from '../pages/number-parcel/number-parce
 import { NumberParcelPage } from "../pages/number-parcel/number-parcel";
 import { ListDatetimesComponent } from '../components/list-datetimes/list-datetimes';
 import { SlideTabsComponent } from '../components/slide-tabs/slide-tabs';
+import { DeliveryaddressServiceProvider } from "../pages/delivery-address/delivery-address.service";
+import { DeliveryAddressPage } from "../pages/delivery-address/delivery-address";
 
 
 
@@ -126,6 +128,7 @@ export function createTranslateLoader(http: Http) {
     PickupDatePage,
     PickupTimePage,
     NumberParcelPage,
+    DeliveryAddressPage,
     AddressCardComponent,
     AddressCardComponent,
     ComfirmCardComponent,
@@ -171,7 +174,8 @@ export function createTranslateLoader(http: Http) {
     PickupDatePage,
     PickupTimePage,
     NumberParcelPage,
-    ConfirmPage
+    ConfirmPage,
+    DeliveryAddressPage
   ],
   providers: [
     // GoogleMapsService,
@@ -203,7 +207,8 @@ export function createTranslateLoader(http: Http) {
     SummaryServiceProvider,
     PickupDateServiceProvider,
     PickupTimeServiceProvider,
-    NumberParcelServiceProvider
+    NumberParcelServiceProvider,
+    DeliveryaddressServiceProvider
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
